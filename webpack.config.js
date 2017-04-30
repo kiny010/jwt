@@ -16,7 +16,8 @@ module.exports = {
     entry: ['babel-polyfill', './lib/index.js'],
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'bundle.min.js'
+        filename: 'bundle.min.js',
+        libraryTarget: 'umd'
     },
     module: {
         loaders: [
@@ -29,13 +30,6 @@ module.exports = {
         ]
     },
     externals: nodeModules,
-    devServer: {
-        proxy: {
-            '*': {
-                target: 'http://localhost:3000'
-            }
-        }
-    },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
             compress: { warnings: false }
