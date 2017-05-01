@@ -2,15 +2,13 @@ import assert from "assert"
 import fs from "fs"
 import jwt from "./../lib/index"
 
-describe('jwt library', () => {
+describe('JSON Web Token library', () => {
 
     const publicKey = fs.readFileSync('./test/secret.key.pub', 'utf8')
     const privateKey = fs.readFileSync('./test/secret.key', 'utf8')
 
     const payload = {
-        "iss": "https:\/\/oauth.example.com",
-        "sub": "Brian",
-        "exp": 1494017009789
+        "iss": "https://christa.io"
     }
 
     describe('decode', () => {
