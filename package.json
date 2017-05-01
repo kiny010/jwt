@@ -1,14 +1,19 @@
 {
-  "name": "feather-jwt",
+  "name": "christa-jwt",
   "version": "1.0.0",
-  "description": "JSON Web Token Library",
+  "description": "JSON Web Token Library written in ECMAScript 6",
   "main": "dist/bundle.min",
   "scripts": {
     "build": "webpack --progress",
     "lint": "jshint test/test.js",
     "test": "mocha --compilers js:babel-core/register"
+
   },
-  "author": "Brian K. Lau",
+  "author": "Brian K. Lau <brian.k.lau@cal.berkeley.edu>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiny010/base64url.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.24.1",
