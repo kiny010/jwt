@@ -1,6 +1,6 @@
 {
   "name": "christa-jwt",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JSON Web Token Library written in ECMAScript 6",
   "main": "dist/bundle.min",
   "scripts": {
